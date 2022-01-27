@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title>Versionamento</title>
+</head>
+<body>
+
+	<h1>Abrir o Prompt de Comando</h1>
+	<h3>Para mostrar se o GIT está instalado digite: git --version</h3>
+	<pre>
+
+	<h4>Principais comandos do GIT no Windows</h4>
+AJUDA: git --help 
+
+1-CONFIGURANDO INFORMAÇÕES DO USUÁRIO:
+git config --global user.name "Wellington Vieira"
+git config --global user.email "wgr.fsantos@gmail.com"
+git config --global core.editor sub
+
+2-BUSCANDO INFORMAÇÕES CADASTRADAS:
+git config --list
+
+3-ENTRANDO EM PASTAS:
+cd C:/pastadestino/subpasta
+
+4-RETORNANDO DIRETÓRIO OU PASTAS:
+cd .. OU cd ../
+
+5-LISTANDO ARQUIVOS:
+dir OU tree /f
+
+6-CRIANDO PASTAS:
+mkdir #nome da pasta que deseja criar
+
+7-LIMPAR TELA:
+cls
+
+8-CRIANDO REPOSITÓRIO:
+*DENTRO DA PASTA DO PROJETO;
+git init
+
+9-BRANCH, README e COMMIT:
+<h4>*INPORTANTE: dentro da pasta do projeto criar o arquivo README.md</h4>
+
+10-VERIFICAR ALTERAÇÕES:
+git status
+
+11-ADICIONANDO TODOS OS ARQUIVOS:
+git add -A
+
+12-ADICIONA UM ARQUIVO ESPECÍFICO;
+git add #nome do arquivo
+
+13-REGISTRAR OU SALVAR ALTERAÇÕES:
+git commit -m "Explicação da modificação e inclusão de novos arquivos"
+
+14-ADICIONAR E REGISTRAR SIMULTANEAMENTE:
+git commit -am "Explicação da modificação e inclusão de novos arquivos"
+
+15-HISTÓRICO DE COMMIT:
+git log
+
+16-REVERTENDO MODIFICAÇÕES USANDO HARD:
+*não recomendado para uso em equipe, pois apaga todos os arquivos modificados na pasta do projeto.
+git reset --hard #cola o código do commit desejado
+
+17-REVERTENDO MODIFICAÇÕES USANDO SOFT:
+*ideal para uso em equipe, pois retorna à versão do GIT, porém mantém os arquivos na pasta do projeto.
+git reset --soft #cola o código do commit desejado
+</pre>
+
+<pre>
+18-LISTA E VERIFICA VERSÃO EM USO DO BRANCH:
+*obs: O branch em uso estará marcado com *
+git branch
+
+19-CRIAR NOVO BRANCH:
+git branch #novo nome
+
+20-MUDANDO DE BRANCH:
+git checkout #nome do branch
+</pre>
+
+<pre>
+21-VERIFICANDO TODAS ALTERAÇÕES:
+git diff
+
+22-VERIFICANDO NOME DOS ARQUIVOS MODIFICADOS:
+git diff --name-only
+
+23-VERIFICANDO MODIFICAÇÃO EM ARQUIVO ESPECÍFICO:
+git diff #nome do arquivo
+
+24-DELETAR ALTERAÇÕES EM UM ARQUIVO ESPECÍFICO:
+*antes de COMMITAR
+git checkout HEAD -- #nome do arquivo
+</pre>
+
+<pre>
+25-SUBINDO ARQUIVOS - ATUALIZANDO REPOSITÓRIO NO GITHUB:
+git push origin master
+
+26-BAIXANDO ARQUIVOS - ATUALIZANDO REPOSITÓRIO LOCAL:
+git pull origin master
+
+</pre>
+
+00-Tudo Sobre SSH
+https://tudosobrehospedagemdesites.com.br/o-que-e-ssh/
+
+</body>
+</html>
